@@ -79,21 +79,13 @@ function App() {
 					display="flex"
 					flexDirection="column"
 					alignItems="center"
-					gap={1}
 					sx={{
 						color: 'white',
 						borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
 						boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
 					}}
 				>
-					<Typography
-						variant="h4"
-						sx={{
-							fontWeight: 800,
-						}}
-					>
-						AskDB
-					</Typography>
+					<Box component="img" src="/media/askdb.png" alt="AskDB Logo" height="100px" />
 					<Typography variant="body2">Ask questions about your database in natural language</Typography>
 				</Box>
 
@@ -153,12 +145,7 @@ function App() {
 								</Alert>
 							)}
 							{loading && (
-								<Box
-									display="flex"
-									justifyContent="center"
-									alignItems="center"
-									py={3}
-								>
+								<Box display="flex" justifyContent="center" alignItems="center" py={3}>
 									<CircularProgress sx={{ color: '#667eea' }} />
 								</Box>
 							)}
