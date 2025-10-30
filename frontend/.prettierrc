@@ -1,0 +1,20 @@
+{
+	"singleQuote": true,
+	"bracketSpacing": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"printWidth": 120,
+	"overrides": [
+		{
+			"files": ["*.json", "**/*.json"],
+			"options": {
+				"parser": "json",
+				"bracketSpacing": true,
+				"printWidth": 120,
+				"tabWidth": 4,
+				"useTabs": true,
+				"trailingComma": "none"
+			}
+		}
+	]
+}
